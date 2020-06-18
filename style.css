@@ -75,3 +75,38 @@ header ul li{
     border-radius: 15px;
 }
 
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 40%;
+    height: 50%;
+    margin: 15% auto;
+    border-radius: 16px;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+.modal-overlay .modal img{
+    width: 90%;
+    height: 60%;
+    margin: 20px auto;
+    border-radius: 16px;
+}
+
+
